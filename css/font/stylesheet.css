@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Adler';
+    src: url('hinted-Adler.eot');
+    src: local('Adler'),
+        url('hinted-Adler.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Adler.woff2') format('woff2'),
+        url('hinted-Adler.woff') format('woff'),
+        url('hinted-Adler.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
