@@ -1,0 +1,218 @@
+@import url('font/stylesheet.css');
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgba(0,0,0,0.45);
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/nyarlathotep.jpg');
+  background-position: right top;
+  background-size: 160%;
+  filter: blur(5px);
+}
+
+.cloud {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 45%;
+  height: 15%;
+  background: rgba(0,0,0,0.9);
+  box-shadow: 0 0 black;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+.lightbeam {
+  position: fixed;
+  width: 25px;
+  height: 160%;
+  background: rgba(255,255,255,0.3);
+  left: 0;
+  top: -18%;
+  margin-left: 500px;
+  transform: rotate3d(8, 3, -3, 41deg);
+}
+
+.blur {
+  -webkit-filter: blur(30px);
+  -moz-filter: blur(30px);
+  -o-filter: blur(30px);
+  -ms-filter: blur(30px);
+  filter: blur(30px);
+  transition: 1s filter linear;
+  -webkit-transition: 1s -webkit-filter linear;
+  -moz-transition: 1s -moz-filter linear;
+  -ms-transition: 1s -ms-filter linear;
+  -o-transition: 1s -o-filter linear;
+}
+
+.blur.remove {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+}
+
+main .call {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  width: 340px;
+  height: 290px;
+  text-align: center;
+  z-index: 8;
+
+}
+
+main .call .number {
+  font-family: 'Adler';
+  color: red;
+  font-size: 62px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+main .call .number span {
+  font-size: 52px;
+}
+
+main .call .title {
+  font-family: 'Adler';
+  color: red;
+  opacity: 0.82;
+  font-size: 32px;
+  margin: 0;
+}
+
+main .call .counter {
+  font-family: 'Adler';
+  color: red;
+  font-size: 60px;
+  margin: 0;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  -ms-transition: -ms-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;  
+}
+
+main .call .counter.timechange {
+  transform: rotateX(92deg);
+  -ms-transform: rotateX(92deg);
+  -webkit-transform: rotateX(92deg);
+}
+
+main .episodeos {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-top: 100vh;
+  margin-bottom: 20%;
+  text-align: center;
+  z-index: 20;
+}
+
+main .episodeos .episodeo {
+  display: inline-block;
+  background-color: #333333;
+  padding: 15px;
+  margin: 10px;
+}
+
+main .episodeos .episodeo h2 {
+  font-family: 'Adler';
+  color: #000000;
+  font-size: 26px;
+}
+
+main .episodeos .episodeo h3 {
+  font-family: 'Adler';
+  color: #000000;
+  font-size: 18px;
+}
+
+main .episodeos .episodeo a {
+  font-family: 'Adler';
+  color: red;
+  font-size: 34px;
+  display: inline-block;
+  padding: 10px;
+  border: 3px solid #FFF;
+}
+
+main .episodeos img {
+  background-color: #fff;
+  border-radius: 220px;
+  width: 150px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 460px) {
+  main .call {
+    width: 300px;
+  }
+  
+  main .call .number {
+    font-size: 60px;
+  }
+  
+  main .call .number span {
+    font-size: 48px;
+  }
+  
+  main .call .title {
+    font-size: 30px;
+  }
+  
+  main .call .counter {
+    font-size: 54px;
+  }
+  
+  main .episodeos {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-bottom: 20%;
+    text-align: center;
+    z-index: 20;
+  }
+  
+  main .episodeos .episodeo {
+    display: inline-block;
+    background-color: #333333;
+    padding: 15px;
+  }
+  
+  main .episodeos .episodeo h2 {
+    font-family: 'Adler';
+    color: #000000;
+    font-size: 26px;
+  }
+  
+  main .episodeos .episodeo h3 {
+    font-family: 'Adler';
+    color: #000000;
+    font-size: 18px;
+  }
+  
+  main .episodeos .episodeo a {
+    font-family: 'Adler';
+    color: red;
+    font-size: 34px;
+    display: inline-block;
+    padding: 10px;
+    border: 3px solid #FFF;
+  }
+}
